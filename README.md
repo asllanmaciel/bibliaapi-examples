@@ -1,5 +1,9 @@
 # BIBLIAAPI Examples
 
+[![Quality](https://github.com/asllanmaciel/bibliaapi-examples/actions/workflows/quality.yml/badge.svg)](https://github.com/asllanmaciel/bibliaapi-examples/actions/workflows/quality.yml)
+[![Release](https://img.shields.io/github/v/release/asllanmaciel/bibliaapi-examples?display_name=tag&sort=semver)](https://github.com/asllanmaciel/bibliaapi-examples/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-0f766e.svg)](LICENSE)
+
 Exemplos pequenos e seguros para integrar aplicações à [BIBLIAAPI](https://bibliaapi.com.br), uma API bíblica em português com contrato OpenAPI.
 
 Este repositório contém somente clientes de exemplo. O código da plataforma, autenticação, cobrança e infraestrutura permanece privado.
@@ -39,15 +43,14 @@ Authorization: Bearer SUA_CHAVE
 
 - [Guia de integração](https://bibliaapi.com.br/integrar)
 - [Contrato OpenAPI](https://bibliaapi.com.br/api/v2/openapi.yaml)
-- [Status da plataforma](https://bibliaapi.com.br/status)
 
 ## Segurança
 
-Nunca inclua uma chave real em código, commits, screenshots ou issues. Use variáveis de ambiente e consulte [`SECURITY.md`](SECURITY.md).
+Nunca inclua uma chave real em código, commits, screenshots ou issues. Use variáveis de ambiente e consulte a [política de segurança](.github/SECURITY.md).
 
 ## Contribuindo
 
-Exemplos para outras linguagens e frameworks são bem-vindos. Leia [`CONTRIBUTING.md`](CONTRIBUTING.md) antes de abrir um pull request.
+Exemplos para outras linguagens e frameworks são bem-vindos. Leia o [guia de contribuição](CONTRIBUTING.md) e o [código de conduta](CODE_OF_CONDUCT.md) antes de abrir um pull request.
 
 ## Licença
 
