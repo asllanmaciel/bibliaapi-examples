@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Relatar vulnerabilidade
+    url: https://bibliaapi.com.br
+    about: Não publique vulnerabilidades ou credenciais em uma issue.
+  - name: Documentação da BIBLIAAPI
+    url: https://bibliaapi.com.br/integrar
+    about: Consulte a documentação antes de abrir uma dúvida de integração.

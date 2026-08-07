@@ -1,0 +1,23 @@
+name: Novo exemplo ou melhoria
+description: Sugira uma linguagem, integração ou melhoria de documentação.
+title: "[Sugestão]: "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Qual necessidade isso resolve?
+      description: Explique quem se beneficia e em qual cenário.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Descreva o exemplo ou a alteração sugerida.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Referências
+      description: Adicione documentação ou implementações relacionadas, se houver.

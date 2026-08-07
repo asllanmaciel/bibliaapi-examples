@@ -1,0 +1,42 @@
+name: Problema em um exemplo
+description: Relate um erro reproduzível nos exemplos do repositório.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Obrigado por ajudar a melhorar os exemplos da BIBLIAAPI. Não inclua tokens ou dados privados.
+  - type: dropdown
+    id: example
+    attributes:
+      label: Exemplo afetado
+      options:
+        - cURL
+        - PHP
+        - JavaScript
+        - Documentação
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o resultado atual e o resultado esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Como reproduzir
+      description: Informe os passos, o ambiente e versões relevantes, sem credenciais reais.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmações
+      options:
+        - label: Removi tokens, chaves e dados pessoais do relato.
+          required: true
+        - label: Procurei por uma issue semelhante antes de abrir esta.
+          required: true
