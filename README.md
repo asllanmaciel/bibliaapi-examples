@@ -52,6 +52,9 @@ Nunca inclua uma chave real em código, commits, screenshots ou issues. Use vari
 
 Exemplos para outras linguagens e frameworks são bem-vindos. Leia o [guia de contribuição](CONTRIBUTING.md) e o [código de conduta](CODE_OF_CONDUCT.md) antes de abrir um pull request.
 
+- [Escolha uma tarefa para primeira contribuição](https://github.com/asllanmaciel/bibliaapi-examples/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
+- [Veja todas as tarefas que precisam de ajuda](https://github.com/asllanmaciel/bibliaapi-examples/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22help%20wanted%22)
+
 ## Licença
 
 [MIT](LICENSE). A licença cobre somente os exemplos deste repositório; dados e serviços consumidos seguem os termos da BIBLIAAPI.
