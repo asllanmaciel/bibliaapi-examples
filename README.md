@@ -39,10 +39,23 @@ GET /api/v2/versions/acf/books/jo/chapters/3/verses/16
 Authorization: Bearer SUA_CHAVE
 ```
 
+## Validação local
+
+Os exemplos podem ser verificados sem fazer uma chamada real à API:
+
+```bash
+php -l examples/php/get-verse.php
+node --check examples/javascript/get-verse.mjs
+bash -n examples/curl/get-verse.sh
+```
+
+O workflow de qualidade permanece disponível para execução manual; o loop normal de manutenção prioriza essas validações locais para evitar consumo desnecessário de CI.
+
 ## Recursos
 
 - [Guia de integração](https://bibliaapi.com.br/integrar)
 - [Contrato OpenAPI](https://bibliaapi.com.br/api/v2/openapi.yaml)
+- [Changelog](CHANGELOG.md)
 
 ## Segurança
 
