@@ -36,5 +36,11 @@ if (!str_contains($statusLine, ' 200 ')) {
     exit(1);
 }
 
-$data = json_decode($response, true, 512, JSON_THROW_ON_ERROR);
+try {
+    $data = json_decode($response, true, 512, JSON_THROW_ON_ERROR);
+} catch (JsonException $exception) {
+    fwrite(STDERR, "A API respondeu com JSON inválido: {$exception->getMessage()}\n");
+    exit(1);
+}
+
 echo json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) . PHP_EOL;
