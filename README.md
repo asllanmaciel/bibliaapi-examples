@@ -39,6 +39,12 @@ GET /api/v2/versions/acf/books/jo/chapters/3/verses/16
 Authorization: Bearer SUA_CHAVE
 ```
 
+## Do exemplo para produção
+
+Os exemplos são intencionalmente pequenos. Antes de usar o mesmo fluxo em uma aplicação crítica, trate explicitamente transporte, timeout, HTTP não-2xx, parsing do payload, retry, logs e isolamento da credencial.
+
+O guia [Clientes resilientes para APIs HTTP](docs/client-resilience.md) explica um baseline independente de linguagem e um checklist para transformar um exemplo simples em uma integração operacionalmente segura.
+
 ## Validação local
 
 Os exemplos podem ser verificados sem fazer uma chamada real à API:
@@ -55,6 +61,7 @@ O workflow de qualidade permanece disponível para execução manual; o loop nor
 
 - [Guia de integração](https://bibliaapi.com.br/integrar)
 - [Contrato OpenAPI](https://bibliaapi.com.br/api/v2/openapi.yaml)
+- [Clientes resilientes](docs/client-resilience.md)
 - [Changelog](CHANGELOG.md)
 
 ## Segurança
