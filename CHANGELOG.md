@@ -12,6 +12,8 @@ All notable changes to this repository will be documented here.
 
 - GitHub Actions quality workflow is manual-only while repository checks are run locally to control CI consumption.
 - PHP example now reports malformed JSON responses explicitly instead of exposing an uncaught decode exception.
+- JavaScript example now separates transport failures, HTTP errors and malformed JSON while preserving the original response body for diagnostics.
+- cURL example now defines explicit connection and total request timeouts in addition to `--fail-with-body`.
 
 ## [0.1.0] - 2026-08-07
 
