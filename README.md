@@ -41,7 +41,9 @@ Authorization: Bearer SUA_CHAVE
 
 ## Do exemplo para produção
 
-Os exemplos são intencionalmente pequenos. Antes de usar o mesmo fluxo em uma aplicação crítica, trate explicitamente transporte, timeout, HTTP não-2xx, parsing do payload, retry, logs e isolamento da credencial.
+Os exemplos são intencionalmente pequenos. Eles definem limites de timeout e tratam falhas básicas de transporte/HTTP/payload quando a linguagem permite, mas **não implementam retry automático**.
+
+Antes de usar o mesmo fluxo em uma aplicação crítica, trate explicitamente transporte, timeout, HTTP não-2xx, parsing do payload, retry/backoff, logs e isolamento da credencial.
 
 O guia [Clientes resilientes para APIs HTTP](docs/client-resilience.md) explica um baseline independente de linguagem e um checklist para transformar um exemplo simples em uma integração operacionalmente segura.
 
