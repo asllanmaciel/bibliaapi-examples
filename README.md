@@ -31,6 +31,7 @@ $env:BIBLIA_API_TOKEN = "sua_chave"
 | cURL | [`examples/curl/get-verse.sh`](examples/curl/get-verse.sh) | `bash examples/curl/get-verse.sh` |
 | PHP | [`examples/php/get-verse.php`](examples/php/get-verse.php) | `php examples/php/get-verse.php` |
 | JavaScript | [`examples/javascript/get-verse.mjs`](examples/javascript/get-verse.mjs) | `node examples/javascript/get-verse.mjs` |
+| Python | [`examples/python/get_verse.py`](examples/python/get_verse.py) | `python3 examples/python/get_verse.py` |
 
 Todos consultam João 3:16 na versão ACF usando:
 
@@ -55,6 +56,8 @@ Os exemplos podem ser verificados sem fazer uma chamada real à API:
 php -l examples/php/get-verse.php
 node --check examples/javascript/get-verse.mjs
 bash -n examples/curl/get-verse.sh
+python3 -m py_compile examples/python/get_verse.py tests/python_test.py
+python3 -m unittest tests/python_test.py
 ```
 
 O workflow de qualidade permanece disponível para execução manual; o loop normal de manutenção prioriza essas validações locais para evitar consumo desnecessário de CI.

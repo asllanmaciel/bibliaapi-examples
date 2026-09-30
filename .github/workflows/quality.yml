@@ -17,3 +17,7 @@ jobs:
         run: node --check examples/javascript/get-verse.mjs
       - name: Validate shell syntax
         run: bash -n examples/curl/get-verse.sh
+      - name: Validate Python syntax
+        run: python3 -m py_compile examples/python/get_verse.py tests/python_test.py
+      - name: Run Python regression tests
+        run: python3 -m unittest tests/python_test.py
